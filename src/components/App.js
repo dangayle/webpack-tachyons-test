@@ -1,10 +1,15 @@
 import React from 'react';
-require('tachyons/css/tachyons.min.css')
+import Tachyons from 'tachyons/css/tachyons.min.css'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
+// require("style-loader!raw-loader!tachyons/css/tachyons.min.css");
 
-
-const App = () => (
-  <div className="mw9 center">
-    <h2 className="red sans-serif tc">Hello, world</h2>
+const App = (props) => (
+  <div>
+    <Header name="Dan" />
+    <Main />
+    <Footer />
   </div>
 );
 
